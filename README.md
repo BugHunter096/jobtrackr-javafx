@@ -44,49 +44,38 @@ JobTrackr centralizes all job applications in one place and helps users track ap
 
 src/main/java/com/pelayo/jobtrackr/
 
-│
-
 ├── MainApp.java
-
+│
 ├── controller/
-
-│   ├── ApplicationController.java
-
-│   └── DashboardController.java
-
+│   ├── DashboardController.java
+│   └── ApplicationFormController.java
 │
-
 ├── model/
-
 │   ├── JobApplication.java
-
 │   ├── ApplicationStatus.java
-
 │   ├── WorkMode.java
-
-│   └── CvType.java
-
+│   ├── CvType.java
+│   └── Platform.java
 │
-
 ├── dao/
-
 │   └── JobApplicationDAO.java
-
 │
-
 ├── database/
-
 │   └── DatabaseManager.java
-
 │
 ├── service/
-
 │   └── JobApplicationService.java
-
 │
-
 └── util/
-
     ├── CsvExporter.java
-    
     └── DateUtils.java
+
+
+src/main/resources/com/pelayo/jobtrackr/
+
+├── view/
+│   ├── dashboard.fxml
+│   └── application-form.fxml
+│
+└── styles/
+    └── styles.css
